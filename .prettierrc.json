@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "plugins": ["prettier-plugin-c"],
+  "tabWidth": 4,
+  "useTabs": true,
+  "printWidth": 80,
+  "semi": true,
+  "bracketSpacing": true,
+  "singleQuote": false,
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "endOfLine": "lf",
+
+  "// Norminette rules": [
+    "✅ Indentação com tab real (não 4 espaços)",
+    "✅ Limite de 80 colunas por linha",
+    "✅ Linhas não terminam com espaço ou tab extra",
+    "✅ Quebra de linha antes e depois de chaves",
+    "✅ Espaços entre operadores e após vírgulas",
+    "✅ Nenhuma linha em branco dupla",
+    "✅ Quebra entre funções com linha em branco simples"
+  ],
+
+  "overrides": [
+    {
+      "files": ["*.c", "*.h"],
+      "options": {
+        "parser": "c",
+        "tabWidth": 4,
+        "useTabs": true,
+        "printWidth": 80,
+        "bracketSpacing": true
+      }
+    }
+  ]
+}
