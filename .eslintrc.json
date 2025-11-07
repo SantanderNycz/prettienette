@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "plugins": ["local"],
+  "extends": [],
+  "env": { "node": true },
+  "overrides": [
+    {
+      "files": ["*.c", "*.h"],
+      "processor": "local/norminette-check"
+    }
+  ]
+}
